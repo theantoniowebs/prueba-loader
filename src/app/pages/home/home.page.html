@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-button (click)="lanzarLoader()">Iniciar Loader</ion-button>
+    </div>
+    </ion-content>
+  <app-loader *ngIf="mostrarLoader" (loaderCompleto)="loaderCompleto()" class="full-screen-loader"></app-loader>
